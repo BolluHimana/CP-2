@@ -8,7 +8,7 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	# your code goes here
 	distance = math.pow(x1-x2,2)+math.pow(y1-y2,2)
 	radius = math.pow(r1+r2,2)
-	if distance>radius:
+	if distance > radius:
 		return False
 	else:
 		return True 
