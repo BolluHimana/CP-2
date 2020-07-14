@@ -10,7 +10,7 @@ def fun_isfactor(f, n):
 		return True
 		if(f==0):
 			return False
-		elif(n%f==0):
-			return False # replace with your solution
-		else:
-			return False
+			if(n%f==0):
+				return False # replace with your solution
+			else:
+				return False
