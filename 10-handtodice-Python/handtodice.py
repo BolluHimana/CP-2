@@ -7,4 +7,7 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	a=hand%10
+	b=hand%10
+	c=hand%10
+	return (c,b,a)
