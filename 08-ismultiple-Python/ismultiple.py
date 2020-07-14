@@ -3,13 +3,13 @@
 # Note that 0 is a multiple of every integer including itself. 
 # Also, you should make constructive use of the isFactor function you just wrote above.
 
-def fun_isfactor(f, n):
-	if(n==0):
+def fun_isfactor(m, n):
+	if(m==0):
 		return True
 
-	if(f==0):
+	if(n==0):
 		return False
-	if(n%f==0):
+	if(m%n==0):
 		return True
 	else:
 		return False
