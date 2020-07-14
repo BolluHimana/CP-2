@@ -6,14 +6,12 @@
 def fun_isfactor(m, n):
 	if(m==0):
 		return True
-
 	if(n==0):
 		return False
 	if(m%n==0):
 		return True
 	else:
 		return False
-
 def fun_ismultiple(m, n):
 	if (fun_isfactor(m,n)==True):
 		return True
