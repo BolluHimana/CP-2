@@ -7,7 +7,10 @@
 
 def handtodice(hand):
 	# your code goes here
+
 	a=hand%10
-	b=hand%10
-	c=hand%10
+	div=hand//10
+	b=div%10
+	div1=div//10
+	c=div1%10
 	return (c,b,a)
