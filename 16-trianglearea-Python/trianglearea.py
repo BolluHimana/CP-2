@@ -4,7 +4,9 @@
 # will probably wish to use Heron's Formula.
 
 import math
+
 def trianglearea(s1, s2, s3):
+
 	s=(s1+s2+s3)/2
 	a=math.sqrt((s)*(s-s1)*(s-s2)*(s-s3))
 	return a
