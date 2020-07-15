@@ -4,4 +4,5 @@ Your code should have the same input/output as the
 iterative code in the instructions."""
 
 def get_fib(position):
-    return -1
+
+    return get_fib(position-1)+get_fib(position-2)
