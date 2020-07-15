@@ -9,5 +9,5 @@ def lineintersection(m1, b1, m2, b2):
 	d=(b2-b1)/(m1-m2)
 	if(m1-m2==0):
 		return None
-	elif d>0:
+	elif d>1:
 		return d
