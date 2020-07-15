@@ -38,6 +38,7 @@ def sortUSA():
             t=country["USA"]
             t.sort()
             return t
+            
 def alphaAsia():
     if "Asia" in locations:
         country=locations["Asia"]
