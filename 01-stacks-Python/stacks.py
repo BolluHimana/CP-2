@@ -29,15 +29,13 @@ class LinkedList(object):
         self.head=new_element
         self.head.next=temp
         
-
     def delete_first(self):
         temp=self.head
-        if self.head!=null:
+        if self.head:
             self.head=temp.next
             return temp
         else:
             return None
-
 class stack(object):
     def __init__(self,top=None):
         self.ll = LinkedList(top)
