@@ -13,4 +13,21 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	large=max(a,b,c)
+	small=min(a,b,c)
+	if(a==b==c):
+		return a*100+b*10+c
+	elif(a>b>c):
+		return a*100+b*10+c
+	elif(c>b>a):
+		return c*100+b*10+a
+	elif(b>a>c):
+		return b*100+a*10+c
+	elif(a<b<c):
+		return c*100+b*10+a
+	elif(c>a>b):
+		return c*100+a*10+b
+	elif(b>c>a):
+		return b*100+c*10+a
+	else:
+		return large*100+a*10+small
