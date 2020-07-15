@@ -7,7 +7,7 @@ import math
 
 def trianglearea(dist1, dist2, dist3):
 	s=(dist1+dist2+dist3)/2
-	a=math.sqrt((s)*(s-dist1)*(s-dist2)*(s-dist3))
+	a=(math.sqrt((s)*(s-dist1)*(s-dist2)*(s-dist3)))
 	return a
 def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
 	dist1=(math.sqrt(math.pow(x2-x1,2)+math.pow(y2-y1,2)))
