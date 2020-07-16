@@ -5,20 +5,19 @@
 # so the 0th digit is the rightmost digit. 
 
 def fun_set_kth_digit(n, k, d):
-	dig = str(n)
-	dChar = str(d)
+	dig = list(str(n))
 	# print (split(nString))
-	nChar = [c for c in dig]
-	# print (nChar)
-	nReverse = list(reversed(nChar))
-	# print (nReverse)
-	if(k>=len(dig)):
-		nReverse=nReverse+dChar
-	ele=nReverse[k]
-	newRev = list(reversed(nReverse))
+	# nChar = [c for c in dig]
+	# # print (nChar)
+	# nReverse = list(reversed(nChar))
+	# # print (nReverse)
+	# if(k>=len(dig)):
+	# 	nReverse=nReverse+d
+	# ele=nReverse[k]
+	# newRev = list(reversed(nReverse))
 	if(n<0):
 		if k<len(dig):
-			dig[len(dig)-1-k]=str(dChar)
+			dig[len(dig)-1-k]=str(d)
 			dig.insert(0,"-")
 			return int("".join(dig))
 		else:
@@ -27,7 +26,7 @@ def fun_set_kth_digit(n, k, d):
 			return int("".join(dig))
 	else:
 		if k<len(dig):
-			dig[len(dig)-1-k]=str(dChar)
+			dig[len(dig)-1-k]=str(d)
 			return int("".join(dig))
 		else:
 			dig.insert(0,str(d))
