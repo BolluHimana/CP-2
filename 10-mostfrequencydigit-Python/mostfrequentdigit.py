@@ -8,7 +8,7 @@ def count(n,d):
 	while(n):
 		if(n%10==d):
 			count=count+1
-		n=n//10
+		n=n/10
 	return count
 def mostfrequentdigit(n):
 	max=0
