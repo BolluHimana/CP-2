@@ -10,9 +10,11 @@ import math
 
 def fun_find_int_roots(a, b, c):
 	d=b**2-4*a*c
-	d1=d*0.5
-	r1=math.floor((-b+d1)/2*a)
-	r2=math.floor((-b-d1)/2*a)
-	return r1, r2
+	r1=math.floor(((-b)+math.sqrt(d))/(2*a))
+	r2=math.floor(((-b)-math.sqrt(d))/(2*a))
+	if(r1>r2):
+		return r2,r1
+	else:
+		return r1,r2
 
 
