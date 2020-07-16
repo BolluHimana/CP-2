@@ -11,4 +11,7 @@
 def gcd(m, n):
 	if(m>0 and n==0):
 		return m
-	gcd(n,m%n)
+	temp=m
+	m=n
+	res=temp%n
+	gcd(m,res)
