@@ -13,11 +13,17 @@
 
 
 def fun_fabricyards(inches):
+	if(inches%36==0):
+		return inches//36
 	# your code goes here
-	return 1
+	else:
+		return inches//36+1
 
 def fun_fabricexcess(inches):
+	if(inches%36==0):
+		return inches//36
+	else:
+		return inches
 	# your code goes here
 	return 1
-
 
