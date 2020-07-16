@@ -6,6 +6,8 @@
 
 
 def fun_get_kth_digit(digit, k):
-	x=digit%10**(k+1)
-	y=digit%10**(k)
+	
+	n=abs(digit)
+	x=n%10**(k+1)
+	y=n%10**(k)
 	return(int(x-y)/10**k)
