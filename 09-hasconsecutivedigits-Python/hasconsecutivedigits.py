@@ -5,7 +5,7 @@
 def hasconsecutivedigits(n):
 	# your code goes here
 	n=str(n)
-	if(len(str)<2):
+	if(len(n)<2):
 		return False
 	l=[i for i in n]
 	for i in range(0,len(n)):
