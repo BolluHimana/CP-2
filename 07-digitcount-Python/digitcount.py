@@ -6,5 +6,5 @@
 # repeatedly remove the ones digit until you cannot.
 import math
 def digitcount(n):
-	# your code goes here
-    return math.floor(math.log(n, 10)+1) 
+	n=abs(n)
+	return math.floor(math.log(n, 10)+1) 
