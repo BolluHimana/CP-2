@@ -8,10 +8,6 @@ def fun_set_kth_digit(n, k, d):
 	dig = str(n)
 	nReverse = dig[len(dig)::-1]
 	d = str(d)
-	# print (split(nString))
-	# nChar = [c for c in dig]
-	# print (nChar)
-	# print (nReverse)
 	if(k>=len(dig)):
 		nReverse=nReverse+d
 	ele=nReverse[k]
