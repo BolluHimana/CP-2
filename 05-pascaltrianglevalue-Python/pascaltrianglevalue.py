@@ -6,7 +6,29 @@
 # are not legal values, return None, instead of crashing. 
 
 
-
+def Pascal(row):
+	l=[]
+	for i in range(0,row+1):
+		t=[]
+		if(i==0):
+			t.append(1)
+		if(i==1):
+			for i in range(i+1):
+				t.append(1)
+		if(i>1):
+			t.append(1)
+			for k in range(0,len([i-1])-1):
+				t.append(l[i-1][k]+l[i-1][k+1])
+			t.append(1)
+		l.append(t)
+	return l
 
 def fun_pascaltrianglevalue(row, col):
-	return 1
+	list = Pascal(row)
+	for i in range(len(list)) :
+		if i==row:
+			l=len(list[i])
+			if col<l:
+				return list[i][col]
+			else:
+				return 0
