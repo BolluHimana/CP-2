@@ -18,6 +18,10 @@ Use the test cases below to guide you!"""
 class Classy(object):
     def __init__(self):
         self.items = []
+
+    def addItem(self,element):
+        self.items.append(element)
+        
     def classiness(self):
         result=0
         for i in self.items:
