@@ -7,4 +7,7 @@
 
 def digitcount(n):
 	# your code goes here
-	pass
+	while(n!=0):
+		n=n//10
+		size=size+1
+	return size
