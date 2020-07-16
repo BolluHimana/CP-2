@@ -6,28 +6,27 @@
 
 def fun_set_kth_digit(n, k, d):
 	dig = str(n)
-	dChar = str(d)
+	nReverse = dig[len(dig)::-1]
+	d = str(d)
 	# print (split(nString))
-	nChar = [c for c in dig]
+	# nChar = [c for c in dig]
 	# print (nChar)
-	nReverse = reversed(nChar)
 	# print (nReverse)
 	if(k>=len(dig)):
-		nReverse=nReverse+dChar
+		nReverse=nReverse+d
 	ele=nReverse[k]
-	newRev = reversed(nReverse)
+	dig = nReverse[len(nReverse)::-1]	
 	s=""
 	if(n<0) :
 		s=s+"-"
-		for i in range(len(dChar)):
-			if(dChar[i]!=ele):
-				s=s+dChar[i]
-			if( dChar[i]==ele):
+		for i in range(len(dig)):
+			if(dig[i]!=ele):
+				s=s+dig[i]
+			if( dig[i]==ele):
 				s=s+d	
 	else:
-		for i in range(len(dChar)):
-			if(dChar[i]!=ele):
-				s=s+dChar[i]
-			if( dChar[i]==ele):
-				s=s+d
-	
+		for i in range(len(dig)):
+			if(dig[i]!=ele):
+				s=s+dig[i]
+			if( dig[i]==ele):
+				s=s+d	
