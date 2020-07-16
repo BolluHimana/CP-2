@@ -9,5 +9,6 @@
 # When we get to gcd(x,0), the answer is x. So gcd(270, 250) is 10. With this in mind, write the function gcd(x,y) that takes two positive integers x and y and returns their gcd using Euclid's gcd algorithm.
 
 def gcd(m, n):
-	# your code goes here
-	pass
+	if(m>0 and n==0):
+		return m
+	gcd(n,m%n)
