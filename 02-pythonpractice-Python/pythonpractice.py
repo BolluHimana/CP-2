@@ -18,3 +18,14 @@ Use the test cases below to guide you!"""
 class Classy(object):
     def __init__(self):
         self.items = []
+    def classiness(self):
+        result=0
+        for i in self.items:
+            if(i=="tophat"):
+                result=result+2
+            if(i=="bowtie"):
+                result=result+4
+            if(i=="monocle"):
+                result=result+5
+        return result
+
