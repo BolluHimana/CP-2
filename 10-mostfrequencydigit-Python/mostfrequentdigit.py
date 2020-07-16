@@ -12,8 +12,12 @@ def count(n,d):
 	return count
 def mostfrequentdigit(n):
 	max=0
+	n=str(n)
+	li=[i for i in n]
 	for d in range(0,9):
 		x=count(n,d)
 		if(x>max):
 			max=x
+			if(max==1):
+				return min
 	return max
