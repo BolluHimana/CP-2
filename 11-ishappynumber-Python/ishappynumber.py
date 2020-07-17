@@ -14,16 +14,17 @@
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
 
+def find(n):
+	sum=0
+	while(n>0):
+		a=n%10
+		sum=sum+(a)*(a)
+		n=n//10
+	return sum
 def ishappynumber(n):
 	if(n>0):
-		sum=0
-		while(n>0):
-			a=n%10
-			sum=sum+(a)*(a)
-			n=n//10
-		
 		while(sum!=1 and sum!=4):
-			ishappynumber(sum)
+			find(sum)
 		if(sum==1):
 			return True
 		else:
