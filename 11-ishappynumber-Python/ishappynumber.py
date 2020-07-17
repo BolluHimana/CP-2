@@ -22,12 +22,11 @@ def find(n):
 		n=n//10
 	return sum
 def ishappynumber(n):
-	sum=n
 	if(n<=0):
 		return False
 	sum=n
 	while(sum!=1 and sum!=4):
-		find(sum)
+		sum=find(sum)
 	if(sum==1):
 		return True
 	else:
