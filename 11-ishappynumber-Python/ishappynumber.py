@@ -17,7 +17,7 @@
 def ishappynumber(n):
 	if(n>0):
 		sum=0
-		while(n):
+		while(n>0):
 			a=n%10
 			sum=sum+(a)*(a)
 			n=n//10
