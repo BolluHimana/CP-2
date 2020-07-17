@@ -21,9 +21,11 @@ def ishappynumber(n):
 			a=n%10
 			sum=sum+(a)*(a)
 			n=n//10
-		l=[]
-		while sum not in l:
-			while(sum!=1 and sum!=4):
-				ishappynumber(sum)
+		
+		while(sum!=1 and sum!=4):
+			ishappynumber(sum)
+		if(sum==1):
 			return True
-		return False
+		else:
+			return False
+	return False
