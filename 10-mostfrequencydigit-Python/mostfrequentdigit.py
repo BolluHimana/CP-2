@@ -4,7 +4,7 @@
 
 def mostfrequentdigit(n):
 	n=str(n)
-	li=[i for i in n]
+	li=[int(i) for i in n]
 	c=[]
 	for  i in range(0,9):
 		list.count(i)
