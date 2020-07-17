@@ -22,6 +22,7 @@ def find(n):
 		n=n//10
 	return sum
 def ishappynumber(n):
+	sum=n
 	if(n>0):
 		while(sum!=1 and sum!=4):
 			find(sum)
