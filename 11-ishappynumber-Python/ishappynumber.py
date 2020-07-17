@@ -23,7 +23,7 @@ def ishappynumber(n):
 			n=n//10
 		l=[]
 		while sum not in l:
-			while(sum!=1):
+			while(sum!=1 and sum!=4):
 				ishappynumber(sum)
 			return True
 		return False
