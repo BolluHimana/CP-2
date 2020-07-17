@@ -23,11 +23,13 @@ def find(n):
 	return sum
 def ishappynumber(n):
 	sum=n
-	if(n>0):
-		while(sum!=1 and sum!=4):
-			find(sum)
-		if(sum==1):
-			return True
-		else:
-			return False
-	return False
+	if(n<=0):
+		return False
+	sum=n
+	while(sum!=1 and sum!=4):
+		find(sum)
+	if(sum==1):
+		return True
+	else:
+		return False
+	
