@@ -4,5 +4,9 @@
 # The second or further occurrence of duplicate should be removed.
 
 def removeduplicate(text):
-	# Your code goes here
-	pass
+	c=[i for i in text]
+	c1=list(dict.fromkeys(c))
+	s=""
+	for i in c1:
+		s=s+i
+	return s
