@@ -5,9 +5,9 @@
 # The two closest numbers in that list are 2 and 6, and their difference is 4.
 
 def smallestdifference(a):
-	if len(a)>1:
-		s=a.sort()
-		diff=s[1]-s[0]
-		return diff
-	else:
-		return False
+	a.sort()
+	s=a[1]-a[0]
+	for i in range(len(a)):
+		if(a[i+1]-a[i]<s):
+			s=a[i+1]-a[i]
+	return s
