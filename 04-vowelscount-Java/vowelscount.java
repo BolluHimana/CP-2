@@ -5,9 +5,17 @@
 
 
 class vowelscount {
+	
 	public int fun_vowelscount(String s){
-		// your code goes here
-		return 0;
+		
+		int count=0;
+		s=s.toLowerCase();
+		for(int i=0;i<s.length();i++){
+        if(s.charAt(i)=='a' || s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'){
+			count=count+1;
+		}
+		}
+		return count;
 	}
 	
 }
