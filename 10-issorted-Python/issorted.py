@@ -6,8 +6,10 @@
 # the list.
 
 def issorted(a):
-	b=sort(a)
-	if(a==b):
+	b=a[:]=b1
+	b.sort()
+	b1.sort(reverse=True)
+	if(a==b or a==b1):
 		return True
 	else:
 		return False
