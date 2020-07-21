@@ -8,9 +8,17 @@
 
 
 def fun_interleave(s1,s2):
-	a=[i for i in s1]
-	b=[j for j in s2]
-	for i,j in a,b:
-		s=s+a[i]+b[j]
-	return s
-	
+	s=""
+	if(len(s1)<len(s2)):
+		a=zip(s1,s2[:len(s1)])
+		for i,j in a:
+			s=s+i+j
+		s=s+s2[len(s1):]
+		return s
+		
+	else:
+		a=zip(s1[:len(s2)],s2)
+		for i,j in a:
+			s=s+i+j
+		s=s+s1[len(s2):]
+		return s
