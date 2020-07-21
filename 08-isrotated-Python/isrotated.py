@@ -10,7 +10,7 @@ def isrotated(str1, str2):
 	s=""
 	for i in rev:
 		s=s+i
-	if(str1[len(str1)::-1]==s):
+	if(str1==s):
 		return True
 	else:
 		return False
