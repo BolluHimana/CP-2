@@ -7,9 +7,10 @@
 def isrotated(str1, str2):
 	l=[c for c in str2]
 	rev=list(reversed(l))
-	for i in range(len(rev)):
+	s=""
+	for i in rev:
 		s=s+i
-	if(str1==s):
+	if(str1[len(str1)::-1]==s):
 		return True
 	else:
 		return False
