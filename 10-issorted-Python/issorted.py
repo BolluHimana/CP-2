@@ -6,10 +6,13 @@
 # the list.
 
 def issorted(a):
-	b=a[:]=b1
+	b=a[:]
+	b1=a[:]
 	b.sort()
 	b1.sort(reverse=True)
-	if(a==b or a==b1):
+	if(a==b):
+		return True
+	if(a==b1):
 		return True
 	else:
 		return False
