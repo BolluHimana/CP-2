@@ -16,6 +16,7 @@ def find(n):
 		sum=sum+(a)*(a)
 		n=n//10
 	return sum
+	
 def ishappynumber(n):
 	if(n<=0):
 		return False
@@ -26,6 +27,7 @@ def ishappynumber(n):
 		return True
 	else:
 		return False
+		
 def fun_nth_happy_number(n):
 	l=[]
 	for i in range(50):
