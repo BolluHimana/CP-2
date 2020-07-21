@@ -6,4 +6,9 @@
 
 def isrotated(str1, str2):
 	n=str1+str1
-	print(n.count(str2))
+	if(n.count(str2))>=1:
+		return True
+	if (str1[len(str1)::-1]==str2):
+		return True
+	else:
+		return False 
