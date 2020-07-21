@@ -6,5 +6,9 @@
 # the list.
 
 def issorted(a):
-	# your code goes here
+	b=sort(a)
+	if(a==b):
+		return True
+	else:
+		return False
 	pass
