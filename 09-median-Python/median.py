@@ -7,7 +7,8 @@ def median(a):
 	lenghth=len(a)
 	if(lenghth==0):
 		return None
-	if(lenghth%2==0):
+		
+	if(lenghth%2==1):
 		return a[lenghth//2]
 	else:
 		return (a[lenghth//2]+a[(lenghth//2)-1])/2
