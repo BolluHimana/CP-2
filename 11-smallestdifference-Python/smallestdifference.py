@@ -6,7 +6,7 @@
 
 def smallestdifference(a):
 	a.sort()
-	s=a[1]-a[0]
+	s=a[len(a)-1]
 	for i in range(len(a)):
 		if(a[i+1]-a[i]<s):
 			s=a[i+1]-a[i]
