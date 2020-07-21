@@ -4,5 +4,13 @@
 # if any two values in L are equal to each other), and False otherwise.
 
 def hasduplicates(L):
-	# Your code goes here
+	l1=[]
+	for i in L:
+		for j in i:
+			l1.append(j)
+	l=set(l1)
+	if(len(l)!=len(l1)):
+		return True
+	return False
+
 	pass
