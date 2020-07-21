@@ -8,5 +8,9 @@
 
 
 def fun_interleave(s1,s2):
-	return ""
+	a=[i for i in s1]
+	b=[j for j in s2]
+	for i,j in a,b:
+		s=s+a[i]+b[j]
+	return s
 	
