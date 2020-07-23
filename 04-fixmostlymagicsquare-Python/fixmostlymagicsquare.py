@@ -7,5 +7,35 @@
 
 
 def fixmostlymagicsquare(L):
-	pass
-	# Your code goes here
+	l=[]
+	a=[]
+	p=0
+	q=0
+	result=0
+	result1=0
+	for i in L:
+		s=0
+		for j in i:
+			s+=j
+		l.append(s)
+	for i in range(len(l)):
+		if(l.count(l[i])==1):
+			p=i
+			result1=l[i]
+		if(l.count(l[i]>1)):
+			result=l[i]
+	for i in range(len(L)):
+		sum=0
+		for j in range(len(L)):
+			s+=L[j][i]
+			a.append(s)
+	for i in range(len(a)):
+		if(a.count(a[i]==1)):
+			q=i
+	final=result1-result
+	if(final>0):
+		L[p][q]=L[p][q]-final
+	else:
+		L[p][q]=L[p][q]+final
+	return L
+	
