@@ -28,10 +28,10 @@ def fixmostlymagicsquare(L):
 		sum=0
 		for j in range(len(L)):
 			s+=L[j][i]
-			a.append(s)
-	for i in range(len(a)):
-		if(a.count(a[i]==1)):
-			q=i
+		a.append(s)
+		for i in range(len(a)):
+			if(a.count(a[i]==1)):
+				q=i
 	final=result1-result
 	if(final>0):
 		L[p][q]=L[p][q]-final
