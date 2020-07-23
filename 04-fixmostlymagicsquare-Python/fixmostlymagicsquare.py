@@ -33,7 +33,7 @@ def fixmostlymagicsquare(L):
 			if(a.count(a[i]==1)):
 				q=i
 	final=result1-result
-	if(final>0):
+	if(result>0):
 		L[p][q]=L[p][q]-final
 	else:
 		L[p][q]=L[p][q]+final
