@@ -8,12 +8,12 @@ def quicksort(array):
 	if len(array)>1:
 		p=array[0]
 		for i in array:
-			if i>p:
-				c.append(i)
-			elif i<p:
+			if i<p:
 				a.append(i)
-			else:
+			elif i==p:
 				b.append(i)
-		return sorted(c)+b+sorted(a)
+			else:
+				c.append(i)
+		return sorted(a)+b+sorted(c)
 	else:
 		return array
