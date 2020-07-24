@@ -16,7 +16,7 @@ def fun_getaverage(s):
 	for i in l:
 		if i.isnum():
 			if i.isnum()>0:
-				s=s+i
+				s=s+int(i)
 				c=c+1
 	if c!=0:
 		return sum/count
