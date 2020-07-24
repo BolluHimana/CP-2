@@ -12,18 +12,18 @@
 
 
 def fun_isfactorish(n):
-	n=abs(n)
-	temp=n
+	n1=abs(n)
+	temp=n1
 	a=[]
 	b=[]
 	while temp>0:
 		r=temp%10
 		a.append(r)
 		temp=temp//10
-	if a[0]==a[1] or a[1]==a[2] or a[2]==a[3] or a.count(0)>0 or len(b)<3 or len(a)<3:
+	if a[0]==a[1] or a[1]==a[2] or a[2]==a[0] or a.count(0)>0 or len(b)<3 or len(a)<3:
 		return False
-	for i in range(1,n+1):
-		if n%i==0:
+	for i in range(1,n1+1):
+		if n1%i==0:
 			b.append(i)
 	for j in a:
 		if j in b:
