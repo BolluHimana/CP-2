@@ -8,19 +8,20 @@
 # lookAndSay([3,3,8,3,3,3,3]) == [(2,3),(1,8),(4,3)]
 
 def lookandsay(a):
-	if a==[]:
-		return []
-	r=[]
-	k=0
-	n=a[0]
-	for i in range (len(a)):
-		if i==len(a)-1:
-			l1=len(a[k:])
-			r=r+[(l1,n)]
-		if a[i]!=n:
-			l1=len(a[k:i])
-			r=r+[(l1,n)]
-			n=a[i]
-			k=i
-	return  r
-	
+	if a!=[]:
+		r=[]
+		k=0
+		n=a[0]
+		for i in range (len(a)):
+			
+			if a[i]!=n:
+				l1=len(a[k:i])
+				r=r+[(l1,n)]
+				n=a[i]
+				k=i
+			if i==len(a)-1:
+				l1=len(a[k:])
+				r=r+[(l1,n)]
+			
+		return  r
+	return []
