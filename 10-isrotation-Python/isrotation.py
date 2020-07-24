@@ -14,3 +14,4 @@ def isrotation(x, y):
 		return True
 	if b in a*2:
 		return True
+	return False
