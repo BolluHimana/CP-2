@@ -18,7 +18,7 @@ def fun_isfactorish(n):
 	b=[]
 	while temp>0:
 		r=temp%10
-		list1.append(rem)
+		a.append(rem)
 		temp=temp//10
 	if a[0]==a[1] or a[1]==a[2] or a[2]==a[3] or a.count(0)>0 or len(b)<3 or len(a)<3:
 		return False
