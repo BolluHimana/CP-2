@@ -20,7 +20,9 @@ def fun_isfactorish(n):
 		r=temp%10
 		a.append(r)
 		temp=temp//10
-	if a[0]==a[1] or a[1]==a[2] or a[2]==a[0] or a.count(0)>0 or len(b)<3 or len(a)<3:
+	if len(a)<3 or len(b)<3:
+		return False
+	elif a[0]==a[1] or a[1]==a[2] or a[2]==a[0] or a.count(0)>0:
 		return False
 	for i in range(1,n1+1):
 		if n1%i==0:
