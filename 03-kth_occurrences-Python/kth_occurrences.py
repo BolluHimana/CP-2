@@ -13,7 +13,7 @@ def fun_kth_occurrences(s, n):
 		else:
 			dict1[i]=1
 	dict2={k:v for k,v in sorted(dict1.items(),key=lambda item:item[1])}
-	l=[{dict1[k]:k}for k in dict1]
+	l=[{dict2[k]:k}for k in dict2]
 	l.reverse()
 	a=l[n-1].values()
 	r=list(a)[0]
