@@ -4,5 +4,12 @@
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem. 
 
 def recursion_powersof3ton(n):
-	# Your code goes here
-	pass
+	if n>1:
+		return None
+	return power([],n,0)
+def power(a,n,b):
+	if b>n:
+		return a
+	elif 3**b<=n:
+		a.append(3**b)
+	return power(a,n,b+1)
