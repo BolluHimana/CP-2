@@ -13,12 +13,12 @@ def multipolynomials(p1, p2):
 		for n in p2:
 			l1.append(m*n)
 	for i in range(len(l1)):
-		if i>2:
+		if i!=1 and i!=2:
 			l2.append(l1[i])
 		else:
 			s=s+l1[i]
 			l2.append(s)
 	if len(l2)>=5:
 		return l2[0:1]+l2[2:3]+l2[4:]
-	if len(l2)<=4:
+	elif len(l2)<=4:
 		return l2[0:1]+l2[2:]
