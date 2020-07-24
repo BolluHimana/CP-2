@@ -17,6 +17,7 @@ def fun_recursion_onlyevendigits(l):
 			return [int(even(l[0]))]+fun_recursion_onlyevendigits(l[1:])
 		else:
 			return[0]+fun_recursion_onlyevendigits(l[1:])
+			
 def even(n):
 	if(n>0):
 		if(((n%10)%2)!=0):
