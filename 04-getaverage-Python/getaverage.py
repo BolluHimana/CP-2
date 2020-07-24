@@ -20,5 +20,5 @@ def fun_getaverage(s):
 				c=c+1
 	if c==0:
 		return 0.0
-	return float(s1/count)
+	return float(s1/c)
 
