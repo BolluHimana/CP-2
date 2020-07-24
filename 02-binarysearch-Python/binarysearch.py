@@ -13,7 +13,7 @@ doesn't exist in the list."""
 def binary_search(input_array, value):
     l=len(input_array)
     c=0
-    for i in range(x):
+    for i in range(l):
         if(value!=input_array[i]):
             c=c+1
         else:
