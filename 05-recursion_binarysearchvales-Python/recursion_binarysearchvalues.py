@@ -27,6 +27,6 @@ def binary(low,high,v,L):
 		if(L[mid]>v):
 			return [(mid,L[mid])]+binary(low,mid-1,v,L)
 		if(L[mid]==v):
-			return [(mid,l[mid])]
+			return [(mid,L[mid])]
 	else:
 		return []
