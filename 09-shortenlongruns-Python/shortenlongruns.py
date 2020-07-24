@@ -14,10 +14,10 @@ def shortenlongruns(L, k):
 	l=[]
 	for i in range(len(L)):
 		if L[i] not in l:
-			l.append(L(i))
+			l.append(L[i])
 			n=1
 		elif L[i]!=L[i-1]:
-			l.append(L(i))
+			l.append(L[i])
 			n=1
 		elif L[i]==L[i-1]:
 			n=n+1
