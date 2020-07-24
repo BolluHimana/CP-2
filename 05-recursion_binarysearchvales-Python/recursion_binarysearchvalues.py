@@ -18,6 +18,15 @@
 # Hint: Do not slice the list L, but rather adjust the indexes into L. 
 
 def recursion_binarysearchvalues(L, v):
-	# Your codes goes here
-	pass
-	
+	return binary(0,len(L)-1,v,L)
+def binary(low,high,v,L):
+	if(low<=high):
+		mid=(low+high)/2
+		if(L[mid]<v):
+			return [(mid,L[mid])]+binary(mid+1,high,v,L)
+		if(L[mid]>v):
+			return [(mid,L[mid])]+binary(low,mid-1,v,L)
+		if(L[mid]==v):
+			return [(mid,l[mid])]
+	else:
+		return []
