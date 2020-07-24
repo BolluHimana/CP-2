@@ -20,7 +20,7 @@ def palindrome(n):
 		r=n%10
 		s=s*10+r
 		n=n//10
-	if sum==temp:
+	if s==temp:
 		return True
 	return False
 def fun_nth_palindromic_prime(n):
