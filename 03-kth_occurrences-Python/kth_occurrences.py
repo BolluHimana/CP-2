@@ -16,7 +16,7 @@ def fun_kth_occurrences(s, n):
 	l=[{dict1[k]:k}for k in dict1]
 	l.reverse()
 	a=l[n-1].values()
-	r=l(a)[0]
+	r=list(a)[0]
 	return r
 
 
