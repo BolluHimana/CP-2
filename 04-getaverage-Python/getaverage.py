@@ -19,6 +19,6 @@ def fun_getaverage(s):
 				s=s+int(i)
 				c=c+1
 	if c!=0:
-		return sum/count
+		return float(sum/count)
 	return 0.0
 
