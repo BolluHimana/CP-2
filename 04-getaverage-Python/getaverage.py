@@ -11,14 +11,14 @@
 
 def fun_getaverage(s):
 	l=s.split(",")
-	s=0
+	s1=0
 	c=0
 	for i in l:
 		if i.isdigit():
 			if i.isdigit()>0:
-				s=s+int(i)
+				s1=s1+int(i)
 				c=c+1
-	if c==0:
-		return 0.0
-	return float(sum/count)
+	if c!=0:
+		return s1/count
+	return 0.0
 
