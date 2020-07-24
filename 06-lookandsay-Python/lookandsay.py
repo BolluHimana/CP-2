@@ -13,7 +13,7 @@ def lookandsay(a):
 		k=0
 		n=a[0]
 		for i in range (len(a)):
-			
+
 			if a[i]!=n:
 				l1=len(a[k:i])
 				r=r+[(l1,n)]
