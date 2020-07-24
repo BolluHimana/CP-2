@@ -5,8 +5,18 @@
 
 
 def fun_matrixmultiply(m1, m2):
-    return None
-
-
-
-
+    a=len(m1[0])
+    l1=len(m2)
+    l=[]
+    if(a==l1):
+        for i in range(0,len(m1)):
+            t=[]
+            for j in range(0,len(m2[0])):
+                n=0
+                for k in range(0,a):
+                    n=n+m1[i][k]*m2[k][j]
+                t.append(n)
+            l.append(t)
+        return l
+    else:
+        return None
