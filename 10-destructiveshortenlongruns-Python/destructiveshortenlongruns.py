@@ -13,5 +13,20 @@
 # assert(L == [2, 3, 5, 5, 3])
 
 def destructiveshortenlongruns(L, k):
-	# Your code goes here
-	pass
+	a=0
+	b=0
+	n=0
+	while a<len(L):
+		if n==L[a]:
+			b=b+1
+			if b>=k:
+				L.pop(a)
+				a-=1
+		elif a==0:
+			n=L[a]
+			b=b+1
+		else:
+			n=L[a]
+			b=1
+		a=a+1
+	return L
