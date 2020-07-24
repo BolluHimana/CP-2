@@ -5,6 +5,33 @@
 
 
 
-
+def isprime(n):
+	if n>1:
+		for i in range(2,n):
+			if n%i!=0:
+				return True
+		return False
+	else:
+		return False
 def fun_nth_additive_prime(n):
-	return 1
+	m=1
+	while(n>=0):
+		if isprime(m) and additive(m):
+			 n=n-1
+		m=m+1
+	return m-1
+def additive(n):
+	a=[]
+	s=0
+	if(isprime(n)):
+		while(n>0):
+			r=n%10
+			a.append(r)
+			n=n//10
+		for i in a:
+			s=s+i
+		if isprime(s):
+			return True
+		else:
+			return False
+
