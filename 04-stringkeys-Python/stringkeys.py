@@ -18,7 +18,7 @@ class HashTable(object):
         string is already in the table.
         Return -1 otherwise."""
         # Your code goes here
-        if  str_iterator in self.table:
+        if  string in self.table:
             return ord(string[0])*100+ord(string[1])
         return -1
 
