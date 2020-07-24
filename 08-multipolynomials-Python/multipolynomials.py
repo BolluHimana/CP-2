@@ -11,7 +11,7 @@ def multipolynomials(p1, p2):
 	s=0
 	for m in p1:
 		for n in p2:
-			l1.append(i*j)
+			l1.append(m*n)
 	for i in range(len(l1)):
 		if i>2:
 			l2.append(l1[i])
