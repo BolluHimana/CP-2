@@ -8,7 +8,8 @@ def longestdigitrun(n):
 	dict1={}
 	q=list(map(int,str(n)))
 	c=1
-	m=len(li)
+	m=len(q)
+	n=abs(n)
 	for i in range(m-1):
 		if q[i]==q[i+1]:
 			c=0
