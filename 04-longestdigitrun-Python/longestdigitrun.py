@@ -6,10 +6,10 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	dict1={}
+	n=abs(n)
 	q=list(map(int,str(n)))
 	c=1
 	m=len(q)
-	n=abs(n)
 	for i in range(m-1):
 		if q[i]==q[i+1]:
 			c=0
