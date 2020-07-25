@@ -8,10 +8,11 @@
 
 
 import math
+
 def Kaprekar(n):
-    if n>0:
-        p=n*n
-    return False
+    if n<=0:
+        return False
+    p=n*n
     if p<10:
         if p==n:
             return True
@@ -31,7 +32,7 @@ def Kaprekar(n):
         
 def fun_nth_kaprekarnumber(n):
     l=[]
-    for i in range(200000):
+    for i in range(100000):
         if Kaprekar(i):
             l.append(i)
     return l[n]
