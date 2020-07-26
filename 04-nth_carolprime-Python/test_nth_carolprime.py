@@ -5,8 +5,8 @@ import pytest
 
 
 @pytest.mark.parametrize('a, result',[
-   (0, 7),(1, 47),(2, 223),(3, 959),
-(4,3967),(5, 16127), (6, 65023)
+   (0, 7),(1, 47),(2, 223),(3,3967 ),
+(4,16127),(5, 1046527), (6, 16769023)
 
 ])
 def test_fun_nth_carolprime(a, result):
