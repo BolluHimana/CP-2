@@ -22,6 +22,6 @@ def nthlychrelnumbers(n):
 	for j in range(4000):
 		if lyrche(j):
 			a.append(j)
-	return a[n]
+	return a[n-1]
 def palindrome(n):
 	return n==reversed(n)
