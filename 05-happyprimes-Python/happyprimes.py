@@ -22,7 +22,7 @@ def prime(n):
                 return False
         return True
     return False
-def sum(p):
+def addition(p):
     s=0
     while p>0:
         r=p%10
@@ -31,8 +31,8 @@ def sum(p):
     return s
 def ishappynumber(n):
     l=[]
-    while sum(n) not in list:
-        r=sum(n)
+    while addition(n) not in list:
+        r=addition(n)
         if r!=1:
             l.append(r)
             n=r
