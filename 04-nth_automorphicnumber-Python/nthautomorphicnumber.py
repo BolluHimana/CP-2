@@ -5,10 +5,10 @@
 def automorphic(n):
 	s=n**2
 	while n>0:
-		if n%10==(n**2)%10:
-			n=n//10
-			s=s//10
-		return False
+		if n%10!=(s)%10:
+			return False
+		n=n//10
+		s=s//10
 	return True
 
 def nthautomorphicnumbers(n):
