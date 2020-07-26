@@ -6,13 +6,13 @@ import math
 def pronic(n):
 	a=0
 	while int(math.sqrt(n)) >=a:
-		if n!=a*(a+1):
-			a=a+1
-		return True
+		if n==a*(a+1):
+			return True
+		a=a+1
 	return False
 def nthpronicnumber(n):
 	l=[]
 	for i in range(3000):
 		if pronic(i):
 			l.append(i)
-	return l[n-1]
+	return l[n]
