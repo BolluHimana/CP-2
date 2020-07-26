@@ -16,9 +16,9 @@ def LeftTruncatablePrime(n):
         c1=digitcount(n)
         for i in range(1,c1):
             p=n%(10**i)
-            if prime(p)==True:
-                return True
-        return False
+            if prime(p)==False:
+                return False
+        return True
 def prime(n):
     if n>=2:
         for i in range(2,n):
