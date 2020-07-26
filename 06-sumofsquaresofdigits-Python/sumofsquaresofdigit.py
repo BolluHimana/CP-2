@@ -6,7 +6,7 @@
 
 def sumofsquaresofdigit(n):
 	add=0
-	while n>=3:
+	while n>=1:
 		dig=n%10
 		n=n//10
 		add=add+dig**2
