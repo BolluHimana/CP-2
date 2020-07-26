@@ -10,7 +10,7 @@ import pytest
 	(940, False), (19, True),
 	(1000, False), (331, True),
 	(1418854, False), (709, True),
-	(6, False), (833, True)
+	(6, False), (833, False)
 ])
 
 def test_ishappyprimenumber(x, result):
