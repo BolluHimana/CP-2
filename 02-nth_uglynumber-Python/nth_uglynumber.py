@@ -15,5 +15,5 @@ def fun_nth_uglynumber(n):
     for i in range(3000):
         if uglynumber(i):
             l.append(i)
-    return l[n+1]
+    return l[n]
 
