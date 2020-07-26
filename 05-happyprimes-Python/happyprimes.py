@@ -13,8 +13,7 @@ def ishappyprimenumber(n):
     if ishappynumber(n):
         if prime(n):
             return True
-    else:
-        return False
+    return False
 def prime(n):
     if n>=2:
         for i in range(2,n):
@@ -31,7 +30,7 @@ def addition(p):
     return s
 def ishappynumber(n):
     l=[]
-    while addition(n) not in list:
+    while addition(n) not in l:
         r=addition(n)
         if r!=1:
             l.append(r)
