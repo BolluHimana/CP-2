@@ -14,4 +14,4 @@ def nthpronicnumber(n):
 	for i in range(3000):
 		if pronic(i):
 			l.append(i)
-	return l[n]
+	return l[n-1]
