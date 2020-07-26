@@ -24,13 +24,13 @@ def prime(n):
         for i in range(2,n):
             if(n%i==0):
                 return False
-            return True
+        return True
     return False
 def digitcount(n):
     num=abs(n)
     c=1
     while num>10:
-        num=n//10
+        num=num//10
         c=c+1
     return c
 
