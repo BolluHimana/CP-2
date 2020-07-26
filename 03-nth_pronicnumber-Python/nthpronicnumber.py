@@ -7,8 +7,8 @@ def pronic(n):
 	a=0
 	while int(math.sqrt(n)) >=a:
 		if n!=a*(a+1):
-			a=a+1
-		return True
+			return True
+		a=a+1
 def nthpronicnumber(n):
 	l=[]
 	for i in range(3000):
