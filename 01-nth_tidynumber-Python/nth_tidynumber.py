@@ -19,4 +19,4 @@ def fun_nth_tidynumber(n):
     for i in range(5000):
         if tidy(i):
             l.append(i)
-    return l[n]
+    return l[n+1]
