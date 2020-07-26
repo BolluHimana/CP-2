@@ -21,8 +21,8 @@ def Kaprekar(n):
     a=math.ceil(math.log(p,10))
     c=1
     while c<a:
-        m1=n%10**c
-        m2=n//10**c
+        m1=p%10**c
+        m2=p//10**c
         if m1==0:
             c=c+1
             continue
