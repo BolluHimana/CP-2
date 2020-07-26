@@ -3,5 +3,19 @@
 # 9, 10, 12, 15 shows the few ugly numbers. By convention, nthUglyNumber(0) will give 1.
 
 
+def uglynumber(n):
+    if n==0:
+        return False
+    for i in 2:
+        for i in 3:
+            for i in 5:
+                while n%i==0:
+                    n=n//i
+    return n==1
 def fun_nth_uglynumber(n):
-    return 0
+    l=[]
+    for i in range(3000):
+        if uglynumber(i):
+            l.append(i)
+    return l[n+1]
+
