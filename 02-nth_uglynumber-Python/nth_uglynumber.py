@@ -6,11 +6,9 @@
 def uglynumber(n):
     if n==0:
         return False
-    for i in 2:
-        for i in 3:
-            for i in 5:
-                while n%i==0:
-                    n=n//i
+    for i in [2,3,5]:
+        while n%i==0:
+            n=n//i
     return n==1
 def fun_nth_uglynumber(n):
     l=[]
