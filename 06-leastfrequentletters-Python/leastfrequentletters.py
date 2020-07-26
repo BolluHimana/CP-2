@@ -10,9 +10,9 @@ import string
 def leastfrequentletters(s):
 	a=len(s)
 	if a==0:
-		return ' '
+		return ''
 	str1=s.lower()
-	val=String.ascii_lowercase
+	val=string.ascii_lowercase
 	c1=1000
 	s1=''
 	i=0
