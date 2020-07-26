@@ -13,7 +13,7 @@ def morphic(n):
 
 def nthautomorphicnumbers(n):
 	l=[]
-	for i in range(900000):
+	for i in range(1100000):
 		if morphic(i):
 			l.append(i)
 	return l[n-1]
