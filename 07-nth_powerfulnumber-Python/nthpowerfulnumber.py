@@ -20,4 +20,4 @@ def nthpowerfulnumber(n):
 	for i in range(2000):
 		if powerful(i):
 			l.append(i)
-	returnl[n+1]
+	return l[n+1]
