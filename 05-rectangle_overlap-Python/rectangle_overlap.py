@@ -13,6 +13,7 @@ def fun_rectangle_overlap(left1, top1, width1, height1, left2, top2, width2, hei
             if(width1>=left2):
                 if(height1<=top2):
                     return True
+                return False
     else:
         return False
 
