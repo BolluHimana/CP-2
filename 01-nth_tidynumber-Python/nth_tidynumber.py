@@ -5,6 +5,18 @@
 # fun_nth_tidynumber(5) = 6
 # fun_nth_tidynumber(15) = 17
 # fun_nth_tidynumber(35) = 46
-
+def tidy(n):
+    d=10
+    while n:
+        r=n%10
+        n=n//10
+        if r<d:
+            return False
+        d=r
+    return True
 def fun_nth_tidynumber(n):
-    return 0
+    l=[]
+    for i in range(5000):
+        if tidy(i):
+            l.append(i)
+    return l[n+1]
