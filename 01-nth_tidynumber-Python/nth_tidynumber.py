@@ -10,7 +10,7 @@ def tidy(n):
     while n:
         r=n%10
         n=n//10
-        if r<d:
+        if r>d:
             return False
         d=r
     return True
@@ -19,4 +19,4 @@ def fun_nth_tidynumber(n):
     for i in range(5000):
         if tidy(i):
             l.append(i)
-    return l[n+1]
+    return l[n]
