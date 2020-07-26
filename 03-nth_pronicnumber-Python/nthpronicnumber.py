@@ -5,7 +5,7 @@
 import math
 def pronic(n):
 	a=0
-	while int(math.sqrt(n)) >=a:
+	while a <=int(math.sqrt(n)): 
 		if n!=a*(a+1):
 			return True
 		a=a+1
