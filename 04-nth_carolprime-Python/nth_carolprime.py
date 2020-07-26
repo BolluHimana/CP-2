@@ -9,7 +9,7 @@
 # for primality (and you may need to think about that hint for a while for it to make sense!).
 
 def prime(n):
-    if n>=2:
+    if n>1:
         for i in range(2,n):
             if (n%i==0):
                 return False
@@ -18,11 +18,9 @@ def prime(n):
 def fun_nth_carolprime(n):
     a=0
     b=0
-    while a<=n:
+    while n<=a:
         b=b+1
         carolprime=(((2**b)-1)**2)-2
         if prime(carolprime):
             a=a+1
     return carolprime
-
-    return 0
