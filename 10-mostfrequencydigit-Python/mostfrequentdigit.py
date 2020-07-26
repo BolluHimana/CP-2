@@ -6,7 +6,7 @@ def mostfrequentdigit(n):
 	n=str(n)
 	l=len(n)
 	if(l==1):
-		return n
+		return int(n)
 	elif(l==2):
 		if n[0]>n[1]:
 			return int(n[1])
