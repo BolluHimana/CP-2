@@ -18,7 +18,7 @@ def prime(n):
 def fun_nth_carolprime(n):
     a=0
     b=0
-    while n<=a:
+    while a<=n:
         b=b+1
         carolprime=(((2**b)-1)**2)-2
         if prime(carolprime):
