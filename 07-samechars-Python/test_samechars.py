@@ -12,5 +12,5 @@ import pytest
 	("","" , True),
 ])
 
-def test_samechars(x, result):
-    assert samechars(x) == result
+def test_samechars(x,y,result):
+    assert samechars(x,y) == result
