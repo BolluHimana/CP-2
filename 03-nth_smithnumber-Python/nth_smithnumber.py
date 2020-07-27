@@ -7,10 +7,10 @@
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
 
-
+import math
 def prime(n):
     for i in range(2,n):
-        if(n%i==0):
+        if(n%i==0 and n%1==0):
             return False
     return True
 def add(n):
@@ -30,7 +30,7 @@ def factorsSum(n):
             l1.append(i)
             n=n/1
     if n>=3:
-        l.append(n)
+        l1.append(n)
     a=0
     for i in l1:
         length=len(str(i))
